@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Albúm</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="static/css/index.css">
+</head>
+<body>
+    
+    <header class="header-site container-fluid">
+        <div class="row">
+            <div class="menu-search col l4">
+                <button data-target="slide-out" class="btn white black-text sidenav-trigger"><i class="material-icons">menu</i>menu</button>
+                <form class="form-search" action="#">
+                    <button class="btn white black-text" id="input">
+                        <i class="material-icons">search</i>
+                    </button>
+                    <input class="d-none" type="text" placeholder="buscar imagen" id="searchImages"  />
+                </form>
+            </div>
+            <div class="title col l4 center">
+                <p>Albúm familiar</p>
+            </div>
+            <div class="user-container col l4">
+                <div class="user">
+                    <p>Walter Noel Solorz...</p>
+                    <img src="static/images/imagen44.png" alt="">
+                </div>
+                <div class="access">
+                    <button class="btn blue">Submit your profile</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+
+    <!-- Área de templates que se visualizan con interactividad con el usuario KEYWORD= JAVASCRIPT, DESPLEGABLE, SIDENAV,  -->
+
+    <ul id="slide-out" class="sidenav">
+      <li><div class="user-view">
+        <div class="background">
+          <img src="https://image.freepik.com/psd-gratis/diseno-fondo-abstracto_1297-78.jpg">
+        </div>
+        <a href="#user"><img class="circle" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t1.0-1/c0.5.160.160a/p160x160/91087295_526034654959334_4853660730672545792_n.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=w6lGlFwVbGwAX9lO5I6&_nc_ht=scontent.fmga3-2.fna&oh=9a5cc7cf5f51cc3681da339788bd458a&oe=5EAC49D3"></a>
+        <a href="#name"><span class="white-text name">Franchesca GABY :V</span></a>
+        <a href="#email"><span class="white-text email">gaby1431@gmail.com</span></a>
+      </div></li>
+      <li><a href="#!"><i class="material-icons">cloud</i>Nube en Google fotos</a></li>
+      <li><a href="#!">Second Link</a></li>
+      <li><div class="divider"></div></li>
+      <li><a class="subheader">Categorías</a></li>
+      <li><a class="waves-effect" href="#mama">Mamá</a></li>
+      <li><a class="waves-effect" href="#family">familia</a></li>
+      <li><a class="waves-effect" href="#mom">Mamá</a></li>
+      <li><a class="waves-effect" href="#!">otros</a></li>
+    </ul>
+
+    <!-- Dropdown Trigger -->
+  <a class='dropdown-trigger btn' href='#' data-target='dropdown1'>Drop Me!</a>
+
+  <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="#!">one</a></li>
+    <li><a href="#!">two</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="#!">three</a></li>
+    <li><a href="#!"><i class="material-icons">view_module</i>four</a></li>
+    <li><a href="#!"><i class="material-icons">cloud</i>five</a></li>
+  </ul>
+
+  <!-- Boton flotante -->
+
+  <div class="fixed-action-btn">
+    <a class="btn-floating btn-large red">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">file_download</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+        
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>  
+    <script>
+        const bnt_input = document.querySelector('#input')
+        const input = document.querySelector('#searchImages')
+
+        bnt_input.addEventListener('click', () => {
+            input.classList.toggle('d-none')
+        })
+
+        M.AutoInit()
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+{
+  "name": "album",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon --watch src server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MiguelHG2351/albumDeFotos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MiguelHG2351/albumDeFotos/issues"
+  },
+  "homepage": "https://github.com/MiguelHG2351/albumDeFotos#readme",
+  "dependencies": {
+    "ejs": "^3.0.2",
+    "express": "^4.17.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
