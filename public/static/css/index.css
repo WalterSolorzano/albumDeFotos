@@ -1,5 +1,10 @@
+* {
+    margin: 0;
+}
+
 body {
     font-family: "Roboto", sans-serif;
+    background-color: #f4f7f6;
 }
 
 .menu-search button {
@@ -14,6 +19,7 @@ body {
 .d-none {
     display: none;
 }
+
 
 
 @media (min-width:992px) {
@@ -46,38 +52,12 @@ body {
         padding: 0;
     }
 
-    @keyframes Aparece {
-        
-        0% {
-            width: 15px;
-        }
-
-        20% {
-            width: 25px;
-        }
-        40% {
-            width: 32px;
-        }
-
-        100% {
-            width: 50px;
-        }
-    }
-
-    .form-search input {
-        animation: Aparece .5s;
-        transition: all .8s ease;
-    }
-
     .form-search button {
-        border:.3px solid rgba(0, 0, 0, 0.21)
+        border:.3px solid rgba(0, 0, 0, 0.21) !important;
+        box-shadow: unset;
     }
 
-    .form-search input::placeholder {
-        color: rgb(34, 37, 228);
-    }
-
-    .user img {
+    .user-img {
         width: 35px;
         height: 35px;
         border-radius: 50%;
@@ -109,4 +89,41 @@ body {
         display: flex;
         align-items: center;
     }
+
+    .divider {
+        padding: 0;
+    }
+
+    .border-header {
+        border: .3px solid rgba(0, 0, 0, 0.21);
+    }
+
+    .border-header li {
+        display: inline-block;
+        padding: 1.2rem;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        border: .3px solid rgba(0, 0, 0, 0.21);
+    }
+
+    .card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-action, .user-card {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-user {
+        cursor: pointer;
+        border-radius: 12px;
+        color: #fff;
+        border: none;
+        padding: 5px;
+        font-size: 10px;
+    }
+
 }
