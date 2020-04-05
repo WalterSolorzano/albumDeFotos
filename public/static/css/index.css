@@ -22,7 +22,7 @@ body {
 
 
 
-@media (min-width:992px) {
+@media (max-width:3840px) {
     .header-site {
         height: 70px;
         /* padding: 8px; */
@@ -126,4 +126,109 @@ body {
         font-size: 10px;
     }
 
+}
+
+@media(max-width:992px) {
+    .header-site {
+        height: 50px;
+        /* padding: 8px; */
+        /* border-bottom:1px solid #E6EAEA; */
+        border-bottom: .2px solid rgba(0, 0, 0, 0.21);
+    }
+    
+    .menu-search {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .menu-search form {
+        /* margin-left: 2em; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-search form button {
+        border: none;
+    }
+
+    .header-site .row, .header-site .row .col {
+        margin: 0;
+        height: inherit;
+        padding: 0;
+    }
+
+    .form-search button {
+        border:.3px solid rgba(0, 0, 0, 0.21) !important;
+        box-shadow: unset;
+    }
+
+    .user-img {
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        transition: all 0.3s ease-in-out;
+        overflow: hidden;
+    }
+    
+    .user-container {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        text-align: center;
+    }
+
+    .title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .title p {
+        margin: 0;
+        text-align: center;
+        /* height: 100%; */
+        font-size: 28px;
+    }
+
+    .user {
+        display: flex;
+        align-items: center;
+    }
+
+    .divider {
+        padding: 0;
+    }
+
+    .border-header {
+        border: .3px solid rgba(0, 0, 0, 0.21);
+    }
+
+    .border-header li {
+        display: inline-block;
+        padding: 1.2rem;
+        cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
+        border: .3px solid rgba(0, 0, 0, 0.21);
+    }
+
+    .card-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .card-action, .user-card {
+        display: flex;
+        align-items: center;
+    }
+
+    .btn-user {
+        cursor: pointer;
+        border-radius: 12px;
+        color: #fff;
+        border: none;
+        padding: 5px;
+        font-size: 10px;
+    }
 }
