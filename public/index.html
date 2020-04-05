@@ -32,7 +32,7 @@
             <div class="user-container col l4">
               <div class="user">
                     <p>Walter Noel Solorz...</p>
-                    <img class="user-img" src="static/images/Imagen44.png" alt="imagen de usuario en el header">
+                    <img loading="lazy" class="user-img" src="static/images/Imagen44.png" alt="imagen de usuario en el header">
                   </div>
                   <div class="access">
                     <button class="btn blue">Submit your profile</button>
@@ -215,7 +215,6 @@
       document.addEventListener('DOMContentLoaded', () => {
         M.AutoInit()
 
-
         function createTemplate(HTMLString) {
     return html.body.children[0];
   }
@@ -226,7 +225,6 @@
           html.body.innerHTML = HTMLString;
           cards.append(html.body.children[0])
         }
-
       })
 
       
