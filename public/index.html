@@ -119,7 +119,7 @@
       function renderTemplate(url) {
         return `
         <div class="col s12 l3 card">
-              <div class="card-image" style="overflow:scroll; height:286px !important;">
+              <div class="card-image materialboxed" style="overflow:scroll; height:286px !important;">
                 <img loading="lazy" class=""materialboxed" src="static/images/${url}.png"">
               </div>
               <div class="card-content">
@@ -141,10 +141,10 @@
           </div>
         `
       }
+      document.addEventListener('load', () => {
+      })
 
       document.addEventListener('DOMContentLoaded', () => {
-        M.AutoInit()
-
         function createTemplate(HTMLString) {
     return html.body.children[0];
   }
@@ -155,6 +155,7 @@
           html.body.innerHTML = HTMLString;
           cards.append(html.body.children[0])
         }
+      M.AutoInit()
       })
 
       
