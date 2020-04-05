@@ -55,76 +55,7 @@
 
       <section class="section">  
         <div id="card-container" class="row">
-            <div class="col s12 l3 card">
-              <div class="card-image">
-                <img src="static/images/abu.png">
-                <span class="card-title">Abuela</span>
-              </div>
-              <div class="card-content">
-                <div><p>Francisca Vallecillo</p></div>
-                <div><p>march 28, 2020</p></div>
-              </div>
-              <div class="card-action">
-                <div class="user-card">
-                  <img class="user-img" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t1.0-1/c38.0.160.160a/p160x160/86699303_832721240486433_5068736281786187776_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=wwMxlVUmKrIAX_Y4eCt&_nc_ht=scontent.fmga3-2.fna&oh=d753d59c0bc1bc3b3453e349edd14edf&oe=5EAD5ADD"
-                   alt="Foto del usuario">
-                   <p>Walter Solorzano</p>
-                  </div>
-                <div>
-                  <button class="btn-user blue">add image</button>
-                  <button class="btn-user orange">add user</button>
-                  <button class="btn-user red">send mail</button>
-                </div>
-              </div>
-          </div>
-            <div class="col s12 l3 card">
-              <div class="card-image">
-                <img src="static/images/567.png">
-                <span class="card-title">Card Title</span>
-              </div>
-              <div class="card-content">
-                <div><p>Francisca Vallecillo</p></div>
-                <div><p>march 28, 2020</p></div>
-              </div>
-              <div class="card-action">
-                <div class="user-card">
-                  <img class="user-img" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t1.0-1/c38.0.160.160a/p160x160/86699303_832721240486433_5068736281786187776_o.jpg?_nc_cat=109&_nc_sid=dbb9e7&_nc_ohc=wwMxlVUmKrIAX_Y4eCt&_nc_ht=scontent.fmga3-2.fna&oh=d753d59c0bc1bc3b3453e349edd14edf&oe=5EAD5ADD"
-                   alt="Foto del usuario">
-                   <p>Walter Solorzano</p>
-                  </div>
-                <div>
-                  <button class="btn-user blue">add image</button>
-                  <button class="btn-user orange">add user</button>
-                  <button class="btn-user red">send mail</button>
-                </div>
-              </div>
-            </div>
-          <div class="col s12 l3 card">
-            <div class="card-image">
-              <img src="https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg">
-              <span class="card-title">Card Title</span>
-            </div>
-            <div class="card-content">
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-            </div>
-            <div class="card-action">
-              <a href="#">This is a link</a>
-            </div>
-        </div>
-        <div class="col s12 l3 card">
-          <div class="card-image">
-            <img src="https://cdn.pixabay.com/photo/2016/03/27/18/54/technology-1283624_960_720.jpg">
-            <span class="card-title">Card Title</span>
-          </div>
-          <div class="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div class="card-action">
-            <a href="#">This is a link</a>
-          </div>
-      </div>
+
       </div>
         <!-- https://cdn.pixabay.com/photo/2015/02/24/15/41/dog-647528_960_720.jpg -->
     </section>
@@ -188,9 +119,8 @@
       function renderTemplate(url) {
         return `
         <div class="col s12 l3 card">
-              <div class="card-image">
-                <img loading="lazy" src="static/images/${url}.png"">
-                <span class="card-title">Abuela</span>
+              <div class="card-image" style="overflow:scroll; height:286px !important;">
+                <img loading="lazy" class=""materialboxed" src="static/images/${url}.png"">
               </div>
               <div class="card-content">
                 <div><p>Francisca Vallecillo</p></div>
